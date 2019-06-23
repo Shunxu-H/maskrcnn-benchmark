@@ -57,5 +57,4 @@ ENV FORCE_CUDA=${FORCE_CUDA}
 # RUN git clone https://github.com/facebookresearch/maskrcnn-benchmark.git \
 #  && cd maskrcnn-benchmark \
 #  && python setup.py build develop
-
-# WORKDIR /maskrcnn-benchmark
+WORKDIR /home/dev

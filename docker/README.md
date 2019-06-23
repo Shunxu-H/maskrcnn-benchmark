@@ -19,7 +19,8 @@ nvidia-docker build -t maskrcnn docker/
 To start a docker image with the binded mount
 
 ```
-docker run -it maskrcnn --name maskrcnn-shareddir --mount type=bind,source=/home/${USER}/maskrcnn-virtualenv,target=/dev-env bash
+mkdir -p /home/${USER}/maskrcnn-virtualenv
+nvidia-docker run -it --name maskrcnn-shareddir --mount type=bind,source=/home/${USER}/maskrcnn-virtualenv,target=/home/dev maskrcnn bash
 ```
 
 ## Versioning
