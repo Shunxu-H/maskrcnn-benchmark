@@ -1,5 +1,6 @@
 #customized 
 log.txt
+config.yml
 
 # compilation and distribution
 __pycache__
